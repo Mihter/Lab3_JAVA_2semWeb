@@ -9,11 +9,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>My Applications</title>
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
+<h1><%= "Hello my friend!" %></h1>
 <br/>
-<a href="main-servlet">Hello Servlet</a>
+<a href="Manager?path=">Main Servlet Manager ----->  Manager?path=</a>
+<br/>
+<a href="Download?path=">Main Servlet Download ----->  Download?path=</a>
+<br/>
+<a>после path= впишите полный путь к папке или файлу в URL строке браузера</a>
 </body>
 </html>

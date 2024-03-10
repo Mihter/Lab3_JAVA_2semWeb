@@ -11,7 +11,7 @@ public class DownloadServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.getRequestDispatcher("Download.jsp").forward(request, response);
-
+        //просто перенаправляю запрос на Download.jsp
     }
 
     public void destroy() {

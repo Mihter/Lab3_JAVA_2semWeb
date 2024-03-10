@@ -9,13 +9,13 @@
 <%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    String directory = request.getParameter("path");
+    String directory = request.getParameter("path").replace("\\","/");
     File file = new File(directory);
     String parentDirectoryPath = "/";
 
 
 
-    parentDirectoryPath = file.getParent();  // Получаем путь к папке-родителю
+    parentDirectoryPath = file.getParent();  // Получаем путь к родительской директории
 
     if (parentDirectoryPath == null) {
         parentDirectoryPath = "/";
@@ -29,7 +29,7 @@
 </head>
 <body>
 <h1>Текущая директория: "<%=directory%> "</h1>
-<p><a href=<%="?path="+parentDirectoryPath.replace("\\","/")%>/>Назад</p>
+<a href=<%="?path="+parentDirectoryPath.replace("\\","/")%>>Назад</a>
 <table>
     <tr>
         <th>Папка</th>
@@ -63,14 +63,12 @@
     <tr>
         <th><%= item.getName()%></th>
 
-        <th><a href=<%="http://localhost:8080/tpp_java_3_war_exploded/Download?path="+ item.getAbsolutePath()%>> Скачать </a> </th>
+        <th><a href=<%="http://localhost:8080/Lab3_JAVA_2semWeb_war_exploded/Download?path="+ item.getAbsolutePath().replace("\\","/")%>> Скачать </a> </th>
         <th><%= item.length()%></th>
         <th><%= new Date(item.lastModified())%></th>
     </tr>
     <% } %>
 </table>
-
-
 <p></p>
 </body>
 </html>
