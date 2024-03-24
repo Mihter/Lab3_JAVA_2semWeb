@@ -14,7 +14,7 @@
 <body>
 <h1><%= "Hello my friend!" %></h1>
 <br/>
-<a href="Manager?path=">Main Servlet Manager ----->  Manager?path=</a>
+<a href="Manager?path=/">Main Servlet Manager ----->  Manager?path=/</a>
 <br/>
 <a href="Download?path=">Main Servlet Download ----->  Download?path=</a>
 <br/>

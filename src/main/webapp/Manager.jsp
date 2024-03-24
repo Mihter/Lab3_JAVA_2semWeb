@@ -5,7 +5,7 @@
   Time: 20:57
   To change this template use File | Settings | File Templates.
 --%>
-<<%@ page import="java.io.File" %>
+<%@ page import="java.io.File" %>
 <%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
@@ -14,11 +14,10 @@
     String parentDirectoryPath = "/";
 
 
-
     parentDirectoryPath = file.getParent();  // Получаем путь к родительской директории
-
-    if (parentDirectoryPath == null) {
-        parentDirectoryPath = "/";
+    String login =(String) request.getAttribute("login");
+    if (parentDirectoryPath == null || parentDirectoryPath.length() < ("D:\\dev\\Java_dev\\Java\\2sem_Spring\\Lab5\\".length() + login.length())) {
+        parentDirectoryPath = "D:\\dev\\Java_dev\\Java\\2sem_Spring\\Lab5\\"+request.getAttribute("login");
     }
 
 
@@ -28,7 +27,7 @@
     <title>Менеджер файлов</title>
 </head>
 <body>
-<h1>Текущая директория: "<%=directory%> "</h1>
+<h1>Текущая директория: "<%=(String) request.getAttribute("currentPath")%> "</h1>
 <a href=<%="?path="+parentDirectoryPath.replace("\\","/")%>>Назад</a>
 <table>
     <tr>
@@ -69,6 +68,10 @@
     </tr>
     <% } %>
 </table>
-<p></p>
+<p>
+<form action="Manager" method="POST">
+    <input type="submit" value="Выйти">
+</form>
+</p>
 </body>
 </html>
