@@ -36,8 +36,8 @@ public class RegisterServlet extends HttpServlet {
         }
 
         AuthService.CreateUser(new User(login, password, email));
-        request.getSession().setAttribute("login", login);
-        request.getSession().setAttribute("password", password);
+
+        request.getSession().setAttribute("email", email);
         try {
             Utility.CreateNewUserFolder(login);
         } catch (Exception ex) {

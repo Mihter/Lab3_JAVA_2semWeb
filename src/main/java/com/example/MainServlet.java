@@ -19,13 +19,21 @@ public class MainServlet extends HttpServlet {
     {
         String login = (String) request.getSession().getAttribute("login");
         String password = (String) request.getSession().getAttribute("password");
+        String email = (String) request.getSession().getAttribute("email");
 
         User user = AuthService.GetUser(login, password);
 
         if(user == null)
         {
-            response.sendRedirect(Utility.RedirectOn(request.getRequestURL().toString(), "/Login"));
-            return;
+            if(login!= null)//если незалогинен
+            {
+                AuthService.CreateUser(new User(login, password, email));
+            }
+            else
+            {
+                response.sendRedirect(Utility.RedirectOn(request.getRequestURL().toString(), "/Login"));
+                return;
+            }
         }
 
         String currentPath = request.getParameter("path");
@@ -35,13 +43,9 @@ public class MainServlet extends HttpServlet {
             currentPath = "D:/dev/Java_dev/Java/2sem_Spring/Lab5";
         }
 
-        if(currentPath.length() < ("D:\\dev\\Java_dev\\Java\\2sem_Spring\\Lab5\\".length() + login.length())){
-            currentPath = "D:\\dev\\Java_dev\\Java\\2sem_Spring\\Lab5\\" + login;
-        }
-
-        if(Utility.IsCorrectFolderForUser(login, currentPath))
+        if(!Utility.IsCorrectFolderForUser(login, currentPath))//если дирректория неверна(выше корневой)
         {
-            currentPath = Utility.GetCorrectRouteForFolder(login);
+            currentPath = Utility.GetCorrectRouteForFolder(login);//вернёт в корневую
         }
 
         FileManager fileManager = new FileManager();

@@ -25,6 +25,7 @@ public class LoginServlet extends HttpServlet {
             response.getWriter().println("Incorrect login or password");
             return;
         }
+
         request.getSession().setAttribute("login", login);
         request.getSession().setAttribute("password", password);
         response.sendRedirect(Utility.RedirectOn(request.getRequestURL().toString(), "/Manager?path=D:/dev/Java_dev/Java/2sem_Spring/Lab5/"+login+"/"));

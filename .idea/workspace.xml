@@ -9,24 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38bff471-f05b-4f70-908c-4f28a0c38e5f" name="Changes" comment="new branch">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/RegisterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/Utility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/Register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+    <list default="true" id="38bff471-f05b-4f70-908c-4f28a0c38e5f" name="Changes" comment="Почти победа">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/DownloadServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/DownloadServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/MainServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Manager.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Manager.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/RegisterServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,23 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Lab5",
-    "last_opened_file_path": "D:/Загрузки/tpp-java-3-laba5/tpp-java-3-laba5",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lab5&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Загрузки/tpp-java-3-laba5/tpp-java-3-laba5&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.19">
     <configuration name="Lab3_JAVA_2semWeb [war:war]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
@@ -235,7 +222,8 @@
       <workItem from="1711275437082" duration="41000" />
       <workItem from="1711275493745" duration="17000" />
       <workItem from="1711275526827" duration="9519000" />
-      <workItem from="1711290176318" duration="16728000" />
+      <workItem from="1711290176318" duration="24877000" />
+      <workItem from="1711339998107" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="Победааааа!!!!">
       <option name="closed" value="true" />
@@ -261,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711278592643</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Почти победа">
+      <option name="closed" value="true" />
+      <created>1711320334699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711320334699</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +267,18 @@
     <MESSAGE value="Победааааа!!!!" />
     <MESSAGE value="Комментарии и микрофишки)))" />
     <MESSAGE value="new branch" />
-    <option name="LAST_COMMIT_MESSAGE" value="new branch" />
+    <MESSAGE value="Почти победа" />
+    <option name="LAST_COMMIT_MESSAGE" value="Почти победа" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/RegisterServlet.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
